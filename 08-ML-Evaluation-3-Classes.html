@@ -8,27 +8,42 @@
     <style>
         body { font-family: 'Sarabun', sans-serif; background-color: #f8fafc; }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
 
-    <!-- Floating Back to Home Button -->
-    <div class="fixed top-4 left-4 z-50">
-        <a href="index.html" class="flex items-center space-x-2 bg-white/90 backdrop-blur-sm text-indigo-600 hover:text-indigo-800 px-4 py-2 rounded-full shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        <!-- Floating Smart Navigator -->
+    <div class="fixed top-4 left-4 z-50 flex items-center space-x-1 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md px-2.5 py-1 rounded-full shadow-lg border border-slate-200 transition-all duration-300 hover:shadow-indigo-500/10">
+        <a href="07-ML-Logistics-Regression-Step-by-Step.html" class="p-1.5 text-slate-600 hover:text-indigo-650 hover:bg-slate-100 rounded-full transition flex items-center" title="บทก่อนหน้า">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            <span class="font-medium text-sm text-indigo-600">กลับสู่สารบัญ</span>
+        </a>
+        <span class="w-[1px] h-3.5 bg-slate-200"></span>
+        <a href="index.html" class="p-1.5 text-slate-600 hover:text-indigo-650 hover:bg-slate-100 rounded-full transition flex items-center" title="กลับหน้าแรกสารบัญ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+        </a>
+        <span class="w-[1px] h-3.5 bg-slate-200"></span>
+        <a href="09-ML-NN.html" class="p-1.5 text-slate-600 hover:text-indigo-650 hover:bg-slate-100 rounded-full transition flex items-center" title="บทถัดไป">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
         </a>
     </div>
 
-    <header class="bg-indigo-600 text-white py-6">
-        <div class="container mx-auto px-4">
-            <h1 class="text-2xl font-bold">08 - การคำนวณค่าประเมินประสิทธิภาพ (3 คลาส)</h1>
-            <p class="mt-1">ฝังไฟล์ PDF เพื่ออ่านในเบราว์เซอร์</p>
+        <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-955 via-slate-900 to-indigo-950 text-white py-12 shadow-lg relative overflow-hidden border-b border-white/10">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:20px_20px] opacity-20"></div>
+        <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-955/60 border-indigo-900/30 px-3 py-1 rounded-full border">Model Validation & Metrics &bull; บทที่ 08</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">การคำนวณค่าประเมิน (3 คลาส)</h1>
+            <p class="text-slate-350 text-sm md:text-base mt-2 font-light">วิธีการคำนวณ Precision, Recall, F1 สำหรับปัญหาจำแนกประเภทหลายคลาส (Multiclass)</p>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
         <div class="bg-white rounded-lg shadow p-4">
             <p class="mb-4 text-gray-700">ถ้าเอกสารไม่โหลด ให้คลิกที่ลิงก์ดาวน์โหลดด้านล่าง</p>
             <div class="w-full" style="height:80vh;">

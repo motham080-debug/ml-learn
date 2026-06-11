@@ -19,25 +19,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
 
-    <!-- Floating Back to Home Button -->
-    <div class="fixed top-4 left-4 z-50">
-        <a href="index.html" class="flex items-center space-x-2 bg-white/90 backdrop-blur-sm text-indigo-600 hover:text-indigo-800 px-4 py-2 rounded-full shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        <!-- Floating Smart Navigator -->
+    <div class="fixed top-4 left-4 z-50 flex items-center space-x-1 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md px-2.5 py-1 rounded-full shadow-lg border border-slate-200 transition-all duration-300 hover:shadow-indigo-500/10">
+        <a href="16-ML-Reinforcement-Learning.html" class="p-1.5 text-slate-600 hover:text-indigo-650 hover:bg-slate-100 rounded-full transition flex items-center" title="บทก่อนหน้า">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            <span class="font-medium text-sm text-indigo-600">กลับสู่สารบัญ</span>
         </a>
+        <span class="w-[1px] h-3.5 bg-slate-200"></span>
+        <a href="index.html" class="p-1.5 text-slate-600 hover:text-indigo-650 hover:bg-slate-100 rounded-full transition flex items-center" title="กลับหน้าแรกสารบัญ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+        </a>
+        <span class="w-[1px] h-3.5 bg-slate-200"></span>
+        <span class="p-1.5 text-slate-300 cursor-not-allowed flex items-center" title="ไม่มีบทเรียนถัดไป">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </span>
     </div>
 
-    <!-- Header -->
-    <header class="gradient-bg text-white py-12 shadow-lg">
-        <div class="container mx-auto px-4 text-center">
-            <span class="text-sm font-semibold bg-white/20 py-1 px-3 rounded-full">บทที่ 17</span>
-            <h1 class="text-3xl md:text-4xl font-bold mt-3">Evolutionary Algorithms & PSO</h1>
-            <p class="mt-2 text-rose-100">ขั้นตอนวิธีเชิงวิวัฒน์และการหาคำตอบที่เหมาะสมที่สุดด้วยวิธีกลุ่มอนุภาค</p>
+        <!-- Header -->
+    <header class="bg-gradient-to-r from-slate-900 via-rose-950 to-pink-950 text-white py-12 shadow-lg relative overflow-hidden border-b border-white/10">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:20px_20px] opacity-20"></div>
+        <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-rose-400 bg-rose-955/60 border-rose-900/30 px-3 py-1 rounded-full border">Evolutionary Algorithms &bull; บทที่ 17</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">Evolutionary & PSO</h1>
+            <p class="text-slate-350 text-sm md:text-base mt-2 font-light">ขั้นตอนวิธีทางพันธุกรรม (Genetic Algorithm) และการหาความเหมาะสมด้วยฝูงอนุภาค (PSO)</p>
         </div>
     </header>
 
